@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lk.ijse.sop/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="lk.ijse.sop/assets/fonts/css/all.css">
+    <link rel="icon" href="lk.ijse.sop/assets/img/my_logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <title>POS_Home</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light text-white-50 border-bottom shadow mb-0 sticky-top" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+        <img src="lk.ijse.sop/assets/img/business.png" alt="" width="65px" height="65px" class="d-inline-block align-top">
+        <a id="title-text" class="navbar-brand font-weight-bold fs-3 ps-sm-3 text-success" href="#" style=" font-family: 'Noto Sans TC', sans-serif;">Innovative Solutions</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll fs-5 ps-3" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" id="btnHome">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnCustomer">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnItem">Items</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Others
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" id="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#" id="btnOrder">Orders</a></li>
+                        <li><a class="dropdown-item" href="#" id="btnEmployee">Employees</a></li>
+                        <li><a class="dropdown-item" href="#" id="btnOrderDetail">Order Details</a></li>
+                        <li><hr  class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <a href="#"><img src="lk.ijse.sop/assets/img/logout.png" alt="" width="23px" height="27px" class="d-inline-block align-top m-1 pt-1"></a>
+                <a id="title-text1" class="navbar-brand font-weight-bold ps-1 text-primary" href="#">Logout</a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<section id="pictures">
+<div class="container-fluid p-0">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators m-3">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active m-1" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="m-1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="m-1" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="lk.ijse.sop/assets/img/wallpaper-1.jpg" class="d-block w-100" alt="..." height="">
+        </div>
+        <div class="carousel-item">
+            <img src="lk.ijse.sop/assets/img/wallpaper-2.jpg" class="d-block w-100" alt="..." height="">
+        </div>
+        <div class="carousel-item">
+            <img src="lk.ijse.sop/assets/img/wallpaper-3.jpg" class="d-block w-100" alt="..." height="">
+        </div>
+    </div>
+    <button class="carousel-control-prev p-0 m-0 border-0 bg-transparent" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next p-0 m-0 border-0 bg-transparent" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
+<!---------------------------------------------------------------------------------------------->
+<div class="container-fluid p-0">
+<div class="bg-gradient pt-5 " style="background-color: #bdc3c7">
+    <div class="container px-5 pb-4">
+        <div class="row">
+            <div class="col">
+                <div class="card border-success mb-3">
+                    <div class="card-header text-dark fw-bold fs-5">Customers</div>
+                    <div class="card-body">
+                        <img src="lk.ijse.sop/assets/img/customers.png" alt="" width="100px" height="100px" class="d-inline-block align-top">
+                        <h5 class="text-end text-dark fs-1">30</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-primary mb-3" >
+                    <div class="card-header text-dark fw-bold fs-5">Items</div>
+                    <div class="card-body">
+                        <img src="lk.ijse.sop/assets/img/items.png" alt="" width="100px" height="100px" class="d-inline-block align-top">
+                        <h5 class="text-end text-dark fs-1">50</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-warning mb-3">
+                    <div class="card-header text-dark fw-bold fs-5">Orders</div>
+                    <div class="card-body">
+                        <img src="lk.ijse.sop/assets/img/orders.png" alt="" width="100px" height="100px" class="d-inline-block align-top">
+                        <h5 class="text-end text-dark fs-1">80</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-danger mb-3">
+                    <div class="card-header text-dark fw-bold fs-5">Reports</div>
+                    <div class="card-body">
+                        <img src="lk.ijse.sop/assets/img/reports.png" alt="" width="100px" height="100px" class="d-inline-block align-top">
+                        <h5 class="text-end text-dark fs-2">
+                            <button class="btn btn-danger">See More</button>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!--Customer-->
+<section id="customer">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-info fs-3 ps-3" href="#">
+                <img src="lk.ijse.sop/assets/img/customer-group.png" alt="" width="35" height="35" class="d-inline-block align-top me-3 mt-1">Customers
+
+                <form class="d-flex">
+                    <a id="title1" class="navbar-brand font-weight-bold ps-0 me-2 text-black-50" href="index.html">Home ></a>
+                    <a id="title" class="navbar-brand font-weight-bold ps-0 text-dark" href="customer.html">Customers</a>
+                </form>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container bg-light p-5 ps-3 mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-5 col-12 ps-0 pe-0">
+                <div class="container-fluid pe-0">
+                    <div class="card">
+                        <div class="card-header bg-success fw-bold fs-4 text-white">
+                            Manage Customer
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="id" class="form-control" id="floatingInput" placeholder="Customer ID">
+                                    <label for="floatingInput">Customer ID</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="name" class="form-control" id="floatingInput1" placeholder="Customer Name">
+                                    <label for="floatingInput1">Customer Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="address" class="form-control" id="floatingInput2" placeholder="Customer Address">
+                                    <label for="floatingInput2">Customer address</label>
+                                </div>
+                                <div class="form-floating mb-5">
+                                    <input type="name" class="form-control" id="floatingInput4" placeholder="Customer Salary">
+                                    <label for="floatingInput4">Customer Salary</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-btn-group mt-0 ms-4 mb-4 p-0" role="group" aria-label="Basic mixed styles example">
+                            <button type="button" class="btn btn-success" id="btnSearch">Search</button>
+                            <button type="button" class="btn btn-warning" id="btnUpdate">Update</button>
+                            <button type="button" class="btn btn-danger" id="btnDelete">Delete</button>
+                            <button type="button" class="btn btn-info" id="btnClear">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col pt-3 pe-0">
+                <div class="btn-group float-end pe-0" role="group" aria-label="Basic mixed styles example">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success fw-bold float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add New Customer
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-success fw-bold text-white">
+                                    <h5 class="modal-title" id="exampleModalLabel">Add New Customer</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-floating mb-3">
+                                        <input type="id" class="form-control" id="customerID" placeholder="Customer ID">
+                                        <label for="floatingInput">Customer ID</label>
+                                        <span class="control-error text-danger fs-6" id="lblcusid"></span>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="name" class="form-control" id="customerName" placeholder="Customer Name">
+                                        <label for="floatingInput1">Customer Name</label>
+                                        <span class="control-error text-danger fs-6" id="lblcusname"></span>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="address" class="form-control" id="customerAddress" placeholder="Customer Address">
+                                        <label for="floatingInput2">Customer address</label>
+                                        <span class="control-error text-danger fs-6" id="lblcusaddress"></span>
+                                    </div>
+                                    <div class="form-floating mb-2">
+                                        <input type="name" class="form-control" id="customerSalary" placeholder="Customer Salary">
+                                        <label for="floatingInput4">Customer Salary</label>
+                                        <span class="control-error text-danger fs-6" id="lblcussalary"></span>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-danger" id="clearCustomer">Clear</button>
+                                    <button type="button" class="btn btn-success" id="addCustomer">Add Customer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm mt-5 pt-4 ps-4" style=" height:400px ;overflow-y: scroll">
+                    <table class="table table-hover" id="customerTable">
+                        <thead class="bg-secondary text-white">
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Customer Name</th>
+                            <th>Customer Address</th>
+                            <th>Customer Salary</th>
+                        </tr>
+                        </thead>
+                        <tbody id="cusBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--item-->
+<section id="item">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary fs-3 ps-3" href="#">
+                <img src="lk.ijse.sop/assets/img/itemset.png" alt="" width="35" height="35" class="d-inline-block align-top me-3 mt-1">Items
+                <form class="d-flex">
+                    <a id="title2" class="navbar-brand font-weight-bold ps-0 me-2 text-black-50" href="index.html">Home ></a>
+                    <a id="title3" class="navbar-brand font-weight-bold ps-0 text-dark" href="item.html">Items</a>
+                </form>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container bg-light p-5 ps-3 mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-5 col-12 ps-0 pe-0">
+                <div class="container-fluid pe-0">
+                    <div class="card">
+                        <div class="card-header bg-info fw-bold fs-4 text-white">
+                            Manage Items
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="id" class="form-control" id="itemCode" placeholder="Item Code">
+                                    <label for="floatingInput">Item Code</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="name" class="form-control" id="itemName" placeholder="Item Name">
+                                    <label for="floatingInput">Item Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="address" class="form-control" id="itemQty" placeholder="Item Qty">
+                                    <label for="floatingInput">Quanity On Hand</label>
+                                </div>
+                                <div class="form-floating mb-5">
+                                    <input type="name" class="form-control" id="unitPrice" placeholder="Unit Price">
+                                    <label for="floatingInput">Unit Price</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-btn-group mt-0 ms-4 mb-4 p-0" role="group" aria-label="Basic mixed styles example">
+                            <button type="button" class="btn btn-success" id="btnItemSearch">Search</button>
+                            <button type="button" class="btn btn-warning" id="btnItemUpdate">Update</button>
+                            <button type="button" class="btn btn-danger" id="btnItemDelete">Delete</button>
+                            <button type="button" class="btn btn-info" id="btnItemClear">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col pt-3 pe-0">
+                <div class="btn-group float-end" role="group" aria-label="Basic mixed styles example">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-info fw-bold text-white" data-bs-toggle="modal" data-bs-target="#customerModal">
+                        Add New Item
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="customerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-info fw-bold text-white">
+                                    <h5 class="modal-title">Add New Item</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-floating mb-3 mt-3">
+                                        <input type="id" class="form-control" id="icode" placeholder="Item Code">
+                                        <label for="floatingInput">Item Code</label>
+                                        <span class="control-error text-danger fs-6" id="lblitemcode"></span>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="name" class="form-control" id="iname" placeholder="Item Name">
+                                        <label for="floatingInput">Item Name</label>
+                                        <span class="control-error text-danger fs-6" id="lblitemname"></span>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="address" class="form-control" id="iqty" placeholder="Item Qty">
+                                        <label for="floatingInput">Quantity On Hand</label>
+                                        <span class="control-error text-danger fs-6" id="lblitemqty"></span>
+                                    </div>
+                                    <div class="form-floating mb-2">
+                                        <input type="name" class="form-control" id="iunitPrice" placeholder="Unit Price">
+                                        <label for="floatingInput">Unit Price</label>
+                                        <span class="control-error text-danger fs-6" id="lblitemprice"></span>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-danger" id="clearItem">Clear</button>
+                                    <button type="button" class="btn btn-info" id="addItem">Add Item</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm mt-5 pt-4 ps-4"  style=" height:400px ;overflow-y: scroll">
+                    <table class="table table-hover" id="itemTable">
+                        <thead class="bg-secondary text-white">
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Qty On Hand</th>
+                            <th>Unit Price</th>
+                        </tr>
+                        </thead>
+                        <tbody id="itemBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Employee-->
+<section id="employee">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 ps-3" style="color: darkred" href="#">
+                <img src="lk.ijse.sop/assets/img/employees.png" alt="" width="35" height="35" class="d-inline-block align-top me-3 mt-1">Employees
+
+                <form class="d-flex">
+                    <a class="navbar-brand font-weight-bold ps-0 me-2 text-black-50" href="index.html">Home ></a>
+                    <a class="navbar-brand font-weight-bold ps-0 text-dark" href="employee.html">Employees</a>
+                </form>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container bg-light p-5 ps-3 mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-5 col-12 ps-0 pe-0">
+                <div class="container-fluid pe-0">
+                    <div class="card">
+                        <div class="card-header fw-bold fs-4 text-dark" style="background-color: darkkhaki">
+                            Manage Employee
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="id" class="form-control" id="floatingInput9" placeholder="name@example.com">
+                                    <label for="floatingInput">Employee ID</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="name" class="form-control" id="floatingInput10" placeholder="name@example.com">
+                                    <label for="floatingInput">Employee Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="address" class="form-control" id="floatingInput11" placeholder="name@example.com">
+                                    <label for="floatingInput">Employes address</label>
+                                </div>
+                                <div class="form-floating mb-5">
+                                    <input type="name" class="form-control" id="floatingInput12" placeholder="name@example.com">
+                                    <label for="floatingInput">Employee Salary</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-btn-group mt-0 ms-4 mb-4 p-0" role="group" aria-label="Basic mixed styles example">
+                            <button type="button" class="btn btn-success">Search</button>
+                            <button type="button" class="btn btn-warning">Update</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                            <button type="button" class="btn btn-info">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col pt-3 pe-0">
+                <div class="btn-group float-end pe-0" role="group" aria-label="Basic mixed styles example">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn fw-bold" data-bs-toggle="modal" data-bs-target="#employeeModal" style="background-color: darkkhaki">
+                        Add New Employee
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" id="employeeModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-dark" style="background-color: darkkhaki">
+                                    <h5 class="modal-title">Add New Employee</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-floating mb-3 mt-3">
+                                        <input type="id" class="form-control" id="floating8" placeholder="Thihan Gamage">
+                                        <label for="floatingInput">Employee ID</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="name" class="form-control" id="floating9" placeholder="name@example.com">
+                                        <label for="floatingInput">Employee Name</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="address" class="form-control" id="floating10" placeholder="name@example.com">
+                                        <label for="floatingInput">Employee address</label>
+                                    </div>
+                                    <div class="form-floating mb-2">
+                                        <input type="name" class="form-control" id="floating11" placeholder="name@example.com">
+                                        <label for="floatingInput">Employee Salary</label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-danger" id="clearEmployee">Clear</button>
+                                    <button type="button" class="btn btn-warning">Add Employee</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm mt-5 pt-4 ps-4" style=" height:400px ;overflow-y: scroll">
+                    <table class="table table-hover">
+                        <thead class="text-dark" style="background-color: darkkhaki">
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Employee Name</th>
+                            <th>Employee Address</th>
+                            <th>Employee Salary</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>E001</td>
+                            <td>Amal</td>
+                            <td>Panadura</td>
+                            <td>20000</td>
+
+                        </tr>
+                        <tr>
+                            <td>E002</td>
+                            <td>Sunil</td>
+                            <td>Galle</td>
+                            <td>15600</td>
+                        </tr>
+                        <tr>
+                            <td>E003</td>
+                            <td>Saman</td>
+                            <td>Kalutara</td>
+                            <td>34000</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Orders-->
+<section id="orders">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 ps-3" style="color: darkcyan" href="#">
+                <img src="lk.ijse.sop/assets/img/Order.png" alt="" width="35" height="35" class="d-inline-block align-top me-3 mt-1">Orders
+
+                <form class="d-flex">
+                    <a class="navbar-brand font-weight-bold ps-0 me-2 text-black-50" href="index.html">Home ></a>
+                    <a class="navbar-brand font-weight-bold ps-0 text-dark" href="orders.html">Orders</a>
+                </form>
+            </a>
+        </div>
+    </nav>
+
+    <main class="container-fluid" id="orderContent">
+        <div class="container-fluid mt-4">
+            <!--main tile-->
+            <div class="pt-3">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-header bg-success text-white fs-5 fw-bolder">Invoice Details</div>
+                            <div class="card-body">
+                                <form class="fw-bold">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group pb-3">
+                                                <label>Order ID :</label>
+                                                <input class="form-control" id="txtOrderID" type="text">
+                                                <span class="control-error"
+                                                      id="orderId-invalid-error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label>Date :</label>
+                                                <input class="form-control" id="txtDate" disabled="disabled">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group pb-3">
+                                                <label>Customer :</label>
+                                                <select class="form-select" id="selectCusID">
+                                                    <option selected>Select Customer</option>
+                                                </select>
+                                                <span class="control-error"
+                                                      id="cus-empty-error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group pb-3">
+                                                <label>Customer ID</label>
+                                                <input class="form-control" id="orderCustomerID">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group pb-3">
+                                                <label>Name :</label>
+                                                <input class="form-control" id="orderCustomerName" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group pb-3">
+                                                <label>Salary :</label>
+                                                <input class="form-control" id="orderCustomerSalary" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group pb-3">
+                                                <label>Address :</label>
+                                                <input class="form-control" id="orderCustomerAddress" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mt-lg-0 mt-3">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white fs-5 fw-bolder">Item Select</div>
+                            <div class="card-body">
+                                <form class="form-group fw-bold">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group pb-3">
+                                                <label>Item :</label>
+                                                <select class="form-select" id="selectItemCode">
+                                                    <option selected>Select Item</option>
+                                                    <!--<option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>-->
+                                                </select>
+                                                <span class="control-error"
+                                                      id="item-empty-error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group pb-3">
+                                                <label>Item Code :</label>
+                                                <input class="form-control" id="orderItemCode" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-5 container-fluid">
+                                            <div class="form-group pb-3">
+                                                <label>Item Name :</label>
+                                                <input class="form-control" id="txtItemName" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-4 container-fluid">
+                                            <div class="form-group pb-3">
+                                                <label class="">Price :</label>
+                                                <input class="form-control" id="txtItemPrice" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-3 container-fluid">
+                                            <div class="form-group pb-1">
+                                                <label class="">QtyOnHand :</label>
+                                                <input class="form-control" id="txtQTYOnHand" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-4">
+                                            <div class="form-group pb-5">
+                                                <label>Order Quantity :</label>
+                                                <input class="form-control" id="txtQty" min="1" type="number">
+                                                <span class="control-error" id="order-qty-empty-error"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-right pb-4">
+                                        <button class="btn btn-danger col-12 col-sm-auto float-end" id="btnAddToTable" type="button">
+                                            Add Item
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" style="background-color: #eeeeee;">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 text-success fs-5 ps-3 pt-3">
+                                            <span class="" id="total-text">Total : </span>
+                                        </div>
+                                        <div class="col-12 text-success fs-3 ps-3">
+                                            <span id="total" type="text">00.0</span> Rs/=
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 text-danger ps-3 pt-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <span id="total-text1">SubTotal : </span>
+                                        </div>
+                                        <div class="col-12 text-danger ps-3 fs-3">
+                                            <span id="subtotal" type="text">00.0</span> Rs/=
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-2">
+                                    <div class="form-group fw-bold pt-2">
+                                        <label>Cash</label>
+                                        <input class="form-control" id="txtCash" min="0" type="number">
+                                        <span class="control-error" id="cash-empty-error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-2 fw-bold pt-2">
+                                    <div class="form-group">
+                                        <label>Discount</label>
+                                        <input class="form-control" id="txtDiscount" min="0" type="number">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group fw-bold pt-3 mb-2">
+                                        <label>Balance</label>
+                                        <input class="form-control" id="txtBalance" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3 fw-bold">
+                                    <button class="btn btn-success float-end" id="btnSubmitOrder" type="button">Purchase</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!--order table-->
+                <div class="col-md-12 mt-4" style="height:180px; overflow-y: scroll">
+                    <table class="table table-bordered" id="tblOrder">
+                        <thead class="bg-warning">
+                        <tr>
+                            <th>Item Code</th>
+                            <th>Item Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                        </thead>
+                        <tbody class="bg-light text-dark" id="orderTable">
+
+                        </tbody>
+                    </table>
+                </div>
+                <!---------->
+            </div>
+        </div>
+    </main>
+</section>
+
+<!--Order Details-->
+<section id="orderDetails">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-info fs-3 ps-3" href="#">
+                <img src="lk.ijse.sop/assets/img/orderDetails.png" alt="" width="35" height="35" class="d-inline-block align-top me-3 mt-1">Order Details
+
+                <form class="d-flex">
+                    <a class="navbar-brand font-weight-bold ps-0 me-2 text-black-50" href="index.html">Home ></a>
+                    <a class="navbar-brand font-weight-bold ps-0 text-dark" href="orderDetails.html">Order Details</a>
+                </form>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container bg-light p-5 ps-3 mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-5 col-12 ps-0 pe-0">
+                <div class="container-fluid pe-0">
+                    <div class="card">
+                        <div class="card-header fw-bold fs-4 text-dark" style="background-color: lightcoral">
+                            Manage Order Details
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="id" class="form-control" id="floatingInput16" placeholder="name@example.com">
+                                    <label for="floatingInput">Order ID</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="name" class="form-control" id="floatingInput17" placeholder="name@example.com">
+                                    <label for="floatingInput">Item Code</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="address" class="form-control" id="floatingInput18" placeholder="name@example.com">
+                                    <label for="floatingInput">Qty</label>
+                                </div>
+                                <div class="form-floating mb-5">
+                                    <input type="address" class="form-control" id="floatingInput19" placeholder="name@example.com">
+                                    <label for="floatingInput">Unit Price</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-btn-group mt-0 ms-4 mb-4 p-0" role="group" aria-label="Basic mixed styles example">
+                            <button type="button" class="btn btn-success">Search</button>
+                            <button type="button" class="btn btn-warning">Update</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                            <button type="button" class="btn btn-info">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col pt-3 pe-0">
+                <div class="btn-group float-end" role="group" aria-label="Basic mixed styles example">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn fw-bold" data-bs-toggle="modal" data-bs-target="#detailModal" style="background-color: lightcoral">
+                        Add New Order Detail
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header fw-bold text-dark" style="background-color: lightcoral">
+                                    <h5 class="modal-title">Add New Order Detail</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-floating mb-3 mt-3">
+                                        <input type="id" class="form-control" id="floating15" placeholder="Thihan Gamage">
+                                        <label for="floatingInput">Order ID</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="name" class="form-control" id="floating16" placeholder="name@example.com">
+                                        <label for="floatingInput">Item Code</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="address" class="form-control" id="floating17" placeholder="name@example.com">
+                                        <label for="floatingInput">Qty</label>
+                                    </div>
+                                    <div class="form-floating mb-5">
+                                        <input type="address" class="form-control" id="floating18" placeholder="name@example.com">
+                                        <label for="floatingInput">Unit Price</label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-danger" id="clearOrderdetail">Clear</button>
+                                    <button type="button" class="btn btn-danger">Add Order Detail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm mt-5 pt-4 ps-4" style=" height:400px ;overflow-y: scroll">
+                    <table class="table table-hover">
+                         <thead class="text-dark" style="background-color: lightcoral">
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Item Code</th>
+                            <th>Qty</th>
+                            <th>Unit Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>O001</td>
+                            <td>I001</td>
+                            <td>20</td>
+                            <td>30.00</td>
+
+                        </tr>
+                        <tr>
+                            <td>O002</td>
+                            <td>I002</td>
+                            <td>10</td>
+                            <td>50.00</td>
+                        </tr>
+                        <tr>
+                            <td>O003</td>
+                            <td>I003</td>
+                            <td>5</td>
+                            <td>100.00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="lk.ijse.sop/assets/js/bootstrap.js"></script>
+<script src="lk.ijse.sop/assets/js/jquery-3.6.0.min.js"></script>
+<script src="lk.ijse.sop/assets/js/jquery-ui.min.js"></script>
+<script src="lk.ijse.sop/db/DB.js"></script>
+<script src="lk.ijse.sop/controller/IndexController.js"></script>
+<script src="lk.ijse.sop/controller/CustomerController.js"></script>
+<script src="lk.ijse.sop/controller/ItemController.js"></script>
+<script src="lk.ijse.sop/controller/OrderController.js"></script>
+<script src="lk.ijse.sop/model/Customer.js"></script>
+<script src="lk.ijse.sop/model/Item.js"></script>
+<script src="lk.ijse.sop/model/Orders.js"></script>
+</body>
+</html>
